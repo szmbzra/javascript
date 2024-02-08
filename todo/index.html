@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="wrap">
+        <section class="heading">
+            <p class="title">Nonotation</p>
+            <p class="subtitle">
+                Manage And Search your pending task in clicks
+            </p>
+        </section>
+        <section class="task-manager">
+            <div class="search-box">
+        <form class="search">
+            <input type="text" name="task" placeholder ="search task" id="" autocomplete="off">
+            <i class="bi bi-x-circle reset"></i>
+        </form> 
+            </div>
+        <div class="task-box">
+            <ul class="tasks">
+                <li><span>Hello</span>
+                <i class="bi bi-trash-fill delete"></i>
+            </li>
+                <li><span>Human</span>
+                <i class="bi bi-trash-fill delete"></i>
+            </li>
+                <li><span>TBeing</span>
+                <i class="bi bi-trash-fill delete"></i>
+            </li>
+            </ul>
+            <form class="add">
+                <input type="text" name="task"  placeholder="add task" autocomplete="off">
+            <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="message">
+            <span></span>
+            <button class="clear">Clear All</button>
+        </div>
+        </section>
+    </div>
+</main>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
