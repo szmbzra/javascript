@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-wrap">
+        <div class="inner-wrap">
+            <secti on class="heading">
+<p class="title">notNotation</p>
+<p class="subtitle">Easiest way ot track your transaction</p>
+            </section>
+<section class="transaction-control">
+<div class="actions">
+<h3>Add Transaction</h3>
+<form class="add">
+    <input type="text" name="source" placeholder="source" autocomplete="off">
+    <input type="number" name="amount" placeholder="Amount" autocomplete="off">
+    <input type="submit" value="Add Transaction">
+</form>
+</div>
+<div class="stats">
+    <h3>Statistics</h3>
+    <p class="balance">
+        Balance: $<span id="balance">651</span>
+    </p>
+    <p class="income">
+        Income: $<span id="income">700</span>
+    </p>
+    <p class="expense">
+        Expense: $<span id="expense">49</span>
+    </p>
+
+</div>
+</section>
+<section class="transaction-history">
+<h3>Transaction History</h3>
+<div class="records">
+    <div class="income">
+        <h3>Income</h3> 
+        <ul class="income-list">
+          <li data-id="">
+              <p>
+                  <span>freelancing js Project</span>
+                  <span id="time">12:45:38 AM 5/19/2024</span>
+              </p>
+              <span>$700</span>
+              <i class="bi bi-trash delete"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="expense">
+          <h3>Expense</h3>
+          <ul class="expense-list">
+              <li data-id="">
+                  <p>
+                      <span>Streaming Rooms</span>
+                      <span id="time">12:45:38 AM 6/19/2024</span>
+                  </p>
+                  <span>$49</span>
+                  <i class="bi bi-trash delete"></i>
+              </li>
+          </ul>
+      </div>
+</div>
+</section>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
