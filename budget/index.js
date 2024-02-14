@@ -75,7 +75,7 @@ return alert("Please add proper values");
 }
 
 
-addTransaction(form.source.value, Number(form.amount.value));
+addTransaction(form.source.value.trim(), Number(form.amount.value));
 updateStatistics();
 form.reset();
 });

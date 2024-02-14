@@ -1,0 +1,154 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+:root{
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+font-size: 16px;
+} 
+.outer-wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0d479a;
+    padding: 30px;
+}
+.inner-wrap{
+    max-width: 1200px;
+    margin: auto;
+}
+.heading{
+    margin-bottom: 30px;
+    .title{
+        font-size:30px;
+        color: #ffff;
+        font-weight: 500;
+        text-align: center;
+    }
+    .subtitle{
+        font-size:30px;
+        color: #ffff;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+.kanban{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-height: 80vh;
+}
+.taskbox{
+    background-color: #d9dfe9;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 325px;
+    max-width: 500px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        span{
+background-color: #e45826;
+color: #ffff;
+padding: 10px;
+font-size: 16px;
+border-radius: 7px;
+        }
+    }
+}
+.cards{
+    padding: 10px 5px;
+}
+
+.card{
+background-color: #ffff;
+margin: 10px 0;
+padding: 10px;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+box-shadow: var(--box-shadow);
+
+input{
+background-color: #ffff;
+margin: 10px 0;
+padding: 10px;
+border-radius: 5px;
+box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+border: 0;
+}
+div{
+display: flex;
+justify-content: space-between;
+span{
+    font-size: 12px;
+    padding: 5px 0;
+    align-self: center;
+     &.task-id{
+background-color: #002366;
+padding: 5px;
+color: #ffff;
+border-radius: 5px;
+ }
+}
+}
+button{
+background-color: #646464;
+color: #ffff;
+font-size: 14px;
+padding: 8px;
+border-radius: 5px;
+margin-left:1px;
+border: 0;
+box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+.edit{
+background-color: #646464;
+}
+
+.update{
+background-color: #005ed8;
+}
+.delete{
+    background-color: #e20000;
+    }
+
+}
+.hide{
+    display: none;
+}
+
+.add{
+    display: flex;
+    input{
+        flex-grow: 1;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0;
+        box-shadow:rgba(0, 0, 0, 0.18) 0 2px 4px;
+    }
+button{
+    background-color: #50b286;
+    color: #ffff;
+    font-size: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0 2px 4px;
+}
+}
+@media(max-width:1080px){
+    .kanban{
+        flex-direction: column;
+        align-items: center;
+    }
+}
