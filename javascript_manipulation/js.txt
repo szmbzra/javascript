@@ -1,0 +1,50 @@
+nodes and types of nodes
+selecting elements using DOM
+1. getElementById()
+2. getElementsByName();
+3. getElementsByTagname()
+4.getElementsByClassName()
+5.querySelector() and querySelectorAll()
+
+// traversing elements
+1. selecting parent element
+selecting child elements
+selecting sibling elements
+
+5. manipulating html elements
+1. createElement()
+2. appendChild()
+3. textContent
+4. innerHTML
+5. after()
+6. append()
+7.prepend()
+8. insertAdjacentHTML()
+9. replaceChild()
+10. cloneNode()
+11. removeChild()
+12. insertBefore()
+
+
+// attribute methods
+getAttribute()
+setAttribute()
+hasAttribute()
+removeAttribute()
+
+manipulating element style
+1. style propert
+csstext
+getComputedStyle()
+ClassName property
+ClassList property
+
+javascript events
+event
+event bubbling and event capturing
+event handler in html attributes
+dom level 0 event handlers
+addEventListeners()
+removeEventListener()
+Event Objects
+Different types of event
